@@ -29,12 +29,12 @@
 import {ref} from "vue";
 import Team from "../pages/Team.vue";
 import Index from "../pages/Index.vue";
-import {Toast} from "vant";
+import { showToast } from "vant";
 
-const onClickLeft = () => alert('左');
-const onClickRight = () => alert('右');
+const onClickLeft = () => showToast('左侧按钮点击');
+const onClickRight = () => showToast('右侧按钮点击');
 const active = ref("index");
-const onChange = (index) => Toast(`标签 ${index}`);
+const onChange = (index) => showToast(`标签 ${index}`);
 </script>
 
 <style scoped>
