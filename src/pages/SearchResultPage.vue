@@ -26,13 +26,12 @@ onMounted(async () => {
       .then(function (response) {
         console.log('/user/search/tags succeed', response);
         showToast('请求成功');
-        return response.data?.data;
+        return response?.data;
       })
       .catch(function (error) {
-        console.log('/user/search/tags error', error);
+        console.error('/user/search/tags error', error);
         showToast('请求失败');
       });
-  console.log(userListData);
   if (userListData) {
     userListData.forEach(user => {
       if (user.tags) {
