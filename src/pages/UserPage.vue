@@ -2,7 +2,6 @@
 import {onMounted, ref} from "vue";
 import {getCurrentUser} from "../services/user.ts";
 
-
 /*const user = {
   id: 1,
   username: 'zwp',
