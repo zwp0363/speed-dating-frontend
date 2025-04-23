@@ -32,7 +32,7 @@ const onSubmit = async () => {
           v-model="userAccount"
           name="userAccount"
           label="账号"
-          placeholder="请输入密码"
+          placeholder="请输入用户名"
           :rules="[{ required: true, message: '请填写用户名' }]"
       />
       <van-field

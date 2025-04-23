@@ -1,8 +1,10 @@
 import axios from "axios";
 
+const isDev = process.env.NODE_ENV === "development";
+
 // 使用自定义配置新建一个实例,即每次请求的共同前缀
 const myAxios = axios.create({
-    baseURL: 'http://localhost:8080/api/',
+    baseURL: isDev ? 'http://localhost:8080/api/' : 'https://yupao-backend-143596-5-1345130790.sh.run.tcloudbase.com',
 });
 
 myAxios.defaults.withCredentials = true; // 向后端发送请求时带上请求的凭证即cookie

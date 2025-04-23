@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {ref} from 'vue';
 import {useRouter} from "vue-router"; // 从 Vue 库中导入 `ref` 函数，用于创建响应式数据
 
