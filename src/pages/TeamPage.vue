@@ -20,7 +20,7 @@ const onTabChange = (name) => {
   }
 }
 
-// 跳转到加入队伍页
+// 跳转到创建队伍页
 const doAddTeam = () => {
   router.push({
     path: "/team/add"

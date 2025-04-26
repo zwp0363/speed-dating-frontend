@@ -91,14 +91,6 @@ const onSubmit = async () => {
 };
 
 
-// 跳转到加入队伍页
-const doJoinTeam = () => {
-  router.push({
-    path: "/team/add"
-  })
-};
-
-
 </script>
 
 <template>
